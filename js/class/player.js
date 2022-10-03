@@ -49,6 +49,8 @@ class Player {
 			this.fuel--;
 		}
 		if (this.fuel < 0) {
+			this.pos.x = this.speed.x = 0
+		this.pos.y = this.speed.y = 0
 			if (!this.play) {
 				nogas.play();
 			}
