@@ -3,10 +3,13 @@
 	<head>
 		<meta charset="UTF-8" />
 		<style>
-			@import url('http://fonts.cdnfonts.com/css/silkscreen');
-
+			@font-face {
+				font-family: Silkscreen;
+				src: url('sfx/font/Silkscreen-Regular.ttf');
+			}
 			* {
 				margin: unset;
+				overflow: hidden;
 			}
 			body {
 				background-color: rgba(160, 145, 123, 1);
@@ -83,7 +86,8 @@
 				left: 50%;
 				text-align: center;
 				color: rgba(221, 6, 6, 0.64);
-				text-shadow: 0 0 15px rgba(164, 2, 2, 0.718), 0 0 10px rgba(193, 6, 6, 0.676);
+				text-shadow: 0 0 15px rgba(164, 2, 2, 0.718),
+					0 0 10px rgba(193, 6, 6, 0.676);
 				transform: translate(-50%, -50%);
 				font-size: 150px;
 			}
