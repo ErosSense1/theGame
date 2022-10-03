@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<style>
+			@import url('http://fonts.cdnfonts.com/css/silkscreen');
+
+			* {
+				margin: unset;
+			}
+			body {
+				background-color: rgba(160, 145, 123, 1);
+			}
+			#fuel {
+				visibility: hidden;
+
+				position: absolute;
+				top: 20px;
+				left: 20px;
+				font-size: 26px;
+				font-family: 'Silkscreen', sans-serif;
+				color: rgba(255, 255, 255, 0.3);
+				text-shadow: 0 0 15px rgba(255, 255, 255, 0.5),
+					0 0 10px rgba(255, 255, 255, 0.5);
+				text-align: center;
+				text-transform: 50% 50%;
+				border-radius: 5px;
+			}
+			#lost {
+				font-family: 'Silkscreen', sans-serif;
+				position: absolute;
+				top: 50%;
+				left: 55%;
+				visibility: hidden;
+				color: rgba(255, 255, 255, 0.3);
+				text-shadow: 0 0 15px rgba(255, 255, 255, 0.5),
+					0 0 10px rgba(255, 255, 255, 0.5);
+				transform: translate(-50%, -50%);
+				font-size: 100px;
+				width: 1000px;
+			}
+			#win {
+				font-family: 'Silkscreen', sans-serif;
+				position: absolute;
+				top: 50%;
+				left: 55%;
+				visibility: hidden;
+				color: rgba(255, 255, 255, 0.3);
+				text-shadow: 0 0 15px rgba(255, 255, 255, 0.5),
+					0 0 10px rgba(255, 255, 255, 0.5);
+				transform: translate(-50%, -50%);
+				font-size: 100px;
+				width: 1000px;
+			}
+			#WIN {
+				font-family: 'Silkscreen', sans-serif;
+				position: absolute;
+				top: 90%;
+				left: 55%;
+				visibility: hidden;
+				color: rgba(255, 255, 255, 0.3);
+				text-shadow: 0 0 15px rgba(255, 255, 255, 0.5),
+					0 0 10px rgba(255, 255, 255, 0.5);
+				transform: translate(-50%, -50%);
+				font-size: 50px;
+				width: 1000px;
+			}
+			#start {
+				font-family: 'Silkscreen', sans-serif;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				color: rgba(0, 186, 254, 0.653);
+				text-shadow: 0 0 15px rgba(4, 103, 195, 0.676),
+					0 0 10px rgba(2, 97, 170, 0.708);
+				transform: translate(-50%, -50%);
+				font-size: 150px;
+			}
+			#name {
+				font-family: 'Silkscreen', sans-serif;
+				position: absolute;
+				top: 20%;
+				left: 50%;
+				text-align: center;
+				color: rgba(221, 6, 6, 0.64);
+				text-shadow: 0 0 15px rgba(164, 2, 2, 0.718), 0 0 10px rgba(193, 6, 6, 0.676);
+				transform: translate(-50%, -50%);
+				font-size: 150px;
+			}
+			#fuela {
+				font-family: 'Silkscreen', sans-serif;
+				position: absolute;
+				top: 50%;
+				left: 55%;
+				visibility: hidden;
+				color: rgba(255, 255, 255, 0.3);
+				text-shadow: 0 0 15px rgba(255, 255, 255, 0.5),
+					0 0 10px rgba(255, 255, 255, 0.5);
+				transform: translate(-50%, -50%);
+				font-size: 100px;
+				width: 1000px;
+			}
+			#version {
+				font-family: 'Silkscreen', sans-serif;
+				position: absolute;
+				top: 94%;
+				left: 84%;
+				color: rgba(4, 248, 146, 0.693);
+				text-shadow: 0 0 15px rgba(3, 197, 145, 0.692),
+					0 0 10px rgba(5, 180, 66, 0.682);
+				font-size: 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<canvas></canvas>
+		<p id="fuel">fuel:</p>
+		<div id="lost">You got lost!</div>
+		<div id="fuela">No more fuel!</div>
+		<div id="start">Start</div>
+		<div id="name">The Game</div>
+		<div id="version">A 1.0.0</div>
+		<div id="WIN">(press space to attemp escape)</div>
+		<div id="win">You survived</div>
+		<script src="js/utils/stuff.js"></script>
+		<script src="js/class/player.js"></script>
+		<script src="js/utils/funcs.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
